@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34BCAFFC-8041-4281-A17A-AD1B9F5E2D4A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SecGSM</RootNamespace>
+    <AssemblyName>SecGSM</AssemblyName>
+    <MyType>Windows</MyType>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SecGSM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SecGSM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="diCrSysPKINet, Version=3.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\diCrSysPKINet.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\C4\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="NITGEN.SDK.NBioBSP, Version=1.1.2.0, Culture=neutral, PublicKeyToken=96eee45103d523d1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\C4\bin\Debug\NITGEN.SDK.NBioBSP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CryptoSysPKI" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMMAC\frmUsuariosAMMAC.designer.vb">
+      <DependentUpon>frmUsuariosAMMAC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AMMAC\frmUsuariosAMMAC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biometria\clsHuella.vb" />
+    <Compile Include="Biometria\frmBiometria.Designer.vb">
+      <DependentUpon>frmBiometria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Biometria\frmBiometria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biometria\frmCapturandoHuella.Designer.vb">
+      <DependentUpon>frmCapturandoHuella.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Biometria\frmCapturandoHuella.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cblowfish.vb" />
+    <Compile Include="ClassCandado.vb" />
+    <Compile Include="ClassCone.vb" />
+    <Compile Include="classexcel.vb" />
+    <Compile Include="classini.vb" />
+    <Compile Include="Classtreeview.vb" />
+    <Compile Include="Classutilidad.vb" />
+    <Compile Include="frmPermisosR.Designer.vb">
+      <DependentUpon>frmPermisosR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPermisosR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecibosCFDI\clsWs.vb" />
+    <Compile Include="RecibosCFDI\FrmCertificado2.Designer.vb">
+      <DependentUpon>FrmCertificado2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecibosCFDI\FrmCertificado2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecibosCFDI\frmLeerCert.designer.vb">
+      <DependentUpon>frmLeerCert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecibosCFDI\frmLeerCert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecibosCFDI\frmNew.designer.vb">
+      <DependentUpon>frmNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecibosCFDI\frmNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecibosCFDI\frmSolCLU.Designer.vb">
+      <DependentUpon>frmSolCLU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecibosCFDI\frmSolCLU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecibosCFDI\frmUsuarios4.designer.vb">
+      <DependentUpon>frmUsuarios4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecibosCFDI\frmUsuarios4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuariosNIC.designer.vb">
+      <DependentUpon>frmUsuariosNIC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuariosNIC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCertificado.Designer.vb">
+      <DependentUpon>FrmCertificado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCertificado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscar.designer.vb">
+      <DependentUpon>frmbuscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcambiarpassw.designer.vb">
+      <DependentUpon>frmcambiarpassw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcambiarpassw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcandado.Designer.vb">
+      <DependentUpon>Frmcandado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcandado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresa.Designer.vb">
+      <DependentUpon>frmEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmllave.Designer.vb">
+      <DependentUpon>frmllave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmllave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpermisos.designer.vb">
+      <DependentUpon>frmpermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpermisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmreportes.designer.vb">
+      <DependentUpon>frmreportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmreportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmseguridad.designer.vb">
+      <DependentUpon>frmseguridad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmseguridad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTables.Designer.vb">
+      <DependentUpon>frmTables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmusuarios.designer.vb">
+      <DependentUpon>frmusuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmusuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmusuarios2.Designer.vb">
+      <DependentUpon>frmusuarios2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmusuarios2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios3.designer.vb">
+      <DependentUpon>frmUsuarios3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewDatatable.Designer.vb">
+      <DependentUpon>frmViewDatatable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewDatatable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listviewclass.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pk1.vb" />
+    <Compile Include="RecibosCFDI\frmWS.designer.vb">
+      <DependentUpon>frmWS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecibosCFDI\frmWS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecibosCFDI\modFunciones.vb" />
+    <Compile Include="Seguridad.cls" />
+    <Compile Include="Settings.vb" />
+    <Compile Include="Utils.vb" />
+    <Compile Include="Web References\wsLocalGral\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsLocalSrv\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AMMAC\frmUsuariosAMMAC.resx">
+      <DependentUpon>frmUsuariosAMMAC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biometria\frmBiometria.resx">
+      <DependentUpon>frmBiometria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biometria\frmCapturandoHuella.resx">
+      <DependentUpon>frmCapturandoHuella.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPermisosR.resx">
+      <DependentUpon>frmPermisosR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecibosCFDI\FrmCertificado2.resx">
+      <DependentUpon>FrmCertificado2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecibosCFDI\frmLeerCert.resx">
+      <DependentUpon>frmLeerCert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecibosCFDI\frmNew.resx">
+      <DependentUpon>frmNew.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecibosCFDI\frmSolCLU.resx">
+      <DependentUpon>frmSolCLU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecibosCFDI\frmUsuarios4.resx">
+      <DependentUpon>frmUsuarios4.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscar.resx">
+      <DependentUpon>frmbuscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuariosNIC.resx">
+      <DependentUpon>frmUsuariosNIC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCertificado.resx">
+      <DependentUpon>FrmCertificado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcambiarpassw.resx">
+      <DependentUpon>frmcambiarpassw.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcandado.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmcandado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmllave.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmllave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpermisos.resx">
+      <DependentUpon>frmpermisos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmreportes.resx">
+      <DependentUpon>frmreportes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmseguridad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmseguridad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTables.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmusuarios.resx">
+      <DependentUpon>frmusuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmusuarios2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmusuarios2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios3.resx">
+      <DependentUpon>frmUsuarios3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewDatatable.resx">
+      <DependentUpon>frmViewDatatable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecibosCFDI\frmWS.resx">
+      <DependentUpon>frmWS.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsLocalGral\gral.wsdl" />
+    <None Include="Web References\wsLocalGral\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsLocalSrv\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsLocalSrv\srv.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bmp\Locker2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capa_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.gruposistecom.com/WSGSM3/gral.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsLocalGral\</RelPath>
+      <UpdateFromURL>http://www.gruposistecom.com/WSGSM3/gral.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SecGSM_wsLocalGral_gralService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://www.gruposistecom.com/WSGSM3/srv.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsLocalSrv\</RelPath>
+      <UpdateFromURL>http://www.gruposistecom.com/WSGSM3/srv.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SecGSM_wsLocalSrv_srvService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_02.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

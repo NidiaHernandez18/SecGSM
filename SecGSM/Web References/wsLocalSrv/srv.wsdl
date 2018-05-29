@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:typens="urn:srv" xmlns="http://schemas.xmlsoap.org/wsdl/" name="srv" targetNamespace="urn:srv" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="UpdateCliente">
+    <wsdl:part name="Info" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCliente_userResponse">
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCLUS">
+    <wsdl:part name="Info" type="xsd:string" />
+    <wsdl:part name="CLU" type="xsd:base64Binary" />
+    <wsdl:part name="PFX" type="xsd:base64Binary" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCLUS_userResponse">
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMsgs">
+    <wsdl:part name="Info" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMsgs_userResponse">
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCatTimbres">
+    <wsdl:part name="Info" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCatTimbres_userResponse">
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetInfo">
+    <wsdl:part name="Info" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetInfo_userResponse">
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="srvPortType">
+    <wsdl:operation name="UpdateCliente">
+      <wsdl:input message="typens:UpdateCliente" />
+      <wsdl:output message="typens:UpdateCliente_userResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCLUS">
+      <wsdl:input message="typens:UpdateCLUS" />
+      <wsdl:output message="typens:UpdateCLUS_userResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMsgs">
+      <wsdl:input message="typens:UpdateMsgs" />
+      <wsdl:output message="typens:UpdateMsgs_userResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCatTimbres">
+      <wsdl:input message="typens:UpdateCatTimbres" />
+      <wsdl:output message="typens:UpdateCatTimbres_userResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfo">
+      <wsdl:input message="typens:GetInfo" />
+      <wsdl:output message="typens:GetInfo_userResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="srvBinding" type="typens:srvPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="UpdateCliente">
+      <soap:operation soapAction="urn:srvAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:srv" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:srv" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCLUS">
+      <soap:operation soapAction="urn:srvAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:srv" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:srv" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMsgs">
+      <soap:operation soapAction="urn:srvAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:srv" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:srv" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCatTimbres">
+      <soap:operation soapAction="urn:srvAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:srv" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:srv" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfo">
+      <soap:operation soapAction="urn:srvAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:srv" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:srv" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="srvService">
+    <wsdl:port name="srvPort" binding="typens:srvBinding">
+      <soap:address location="http://www.gruposistecom.com/WSGSM3/wsSrv.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

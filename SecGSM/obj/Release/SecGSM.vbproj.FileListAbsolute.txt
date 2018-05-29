@@ -1,0 +1,76 @@
+B:\apps\SecGSM\obj\Release\SecGSM.frmBiometria.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmCapturandoHuella.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmLeerCert.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmNew.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmusuarios4.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmbuscar.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmusuariosNIC.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmCertificado.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmcambiarpassw.resources
+B:\apps\SecGSM\obj\Release\SecGSM.Frmcandado.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmEmpresa.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmllave.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmpermisos.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmreportes.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmseguridad.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmTables.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmusuarios.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmusuarios2.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmusuarios3.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmViewDatatable.resources
+B:\apps\SecGSM\obj\Release\SecGSM.Resources.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmWS.resources
+B:\apps\SecGSM\bin\Release\SecGSM.XmlSerializers.dll
+B:\apps\SecGSM\bin\Release\SecGSM.pdb
+B:\apps\SecGSM\bin\Release\SecGSM.xml
+B:\apps\SecGSM\bin\Release\diCrSysPKINet.dll
+B:\apps\SecGSM\bin\Release\ICSharpCode.SharpZipLib.dll
+B:\apps\SecGSM\bin\Release\NITGEN.SDK.NBioBSP.dll
+B:\apps\SecGSM\obj\Release\SecGSM.xml
+B:\apps\SecGSM\obj\Release\SecGSM.pdb
+B:\apps\SecGSM\obj\Release\SecGSM.XmlSerializers.dll
+B:\apps\SecGSM\obj\Release\SecGSM.frmSolCLU.resources
+B:\apps\SecGSM\obj\Release\SecGSM.frmCertificado2.resources
+B:\apps\SecGSM\bin\Release\SecGSM.dll.config
+B:\apps\SecGSM\bin\Release\SecGSM.dll
+B:\apps\SecGSM\obj\Release\SecGSM.dll
+B:\apps\SecGSM\obj\Release\SecGSM.vbproj.GenerateResource.Cache
+B:\apps\SecGSM\obj\Release\SecGSM.vbprojResolveAssemblyReference.cache
+B:\apps\SecGSM\obj\Release\SecGSM.frmUsuariosAMMAC.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\bin\Release\SecGSM.dll.config
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\bin\Release\SecGSM.dll
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\bin\Release\SecGSM.XmlSerializers.dll
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\bin\Release\SecGSM.pdb
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\bin\Release\SecGSM.xml
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\bin\Release\diCrSysPKINet.dll
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.vbprojResolveAssemblyReference.cache
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmUsuariosAMMAC.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmBiometria.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmCapturandoHuella.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmCertificado2.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmLeerCert.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmNew.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmSolCLU.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmusuarios4.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmbuscar.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmusuariosNIC.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmCertificado.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmcambiarpassw.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.Frmcandado.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmEmpresa.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmllave.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmpermisos.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmreportes.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmseguridad.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmTables.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmusuarios.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmusuarios2.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmUsuarios3.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmViewDatatable.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.Resources.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.frmWS.resources
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.vbproj.GenerateResource.Cache
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.dll
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.xml
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.pdb
+C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.XmlSerializers.dll

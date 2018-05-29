@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Solicitudes>
+    <IDRequest>28</IDRequest>
+    <Numero>1</Numero>
+    <Sucursal>1</Sucursal>
+    <CSD>00001000000200078143.cer</CSD>
+    <Empresa>GRUPO SISTECOM DE MEXICO SC</Empresa>
+    <Fecha>2013-12-10T14:58:38.9338155-06:00</Fecha>
+    <RFC>GSM010301EG4</RFC>
+    <NOCSD>00001000000200078143</NOCSD>
+    <LlavePrivada>GSM010301EG4_1001121424S.key</LlavePrivada>
+    <Nombre>CESAR ABRAHAM GUEL</Nombre>
+    <Usuario>CGUEL</Usuario>
+    <Passw>cesar1</Passw>
+    <Email>cguel@gruposistecom.com</Email>
+    <Tel>8999101727 1252353478 </Tel>
+    <EstadoAut />
+  </Solicitudes>
+  <Solicitudes>
+    <IDRequest>0</IDRequest>
+    <Numero>1</Numero>
+    <Sucursal>1</Sucursal>
+    <CSD>00001000000200078143.cer</CSD>
+    <Empresa>GRUPO SISTECOM DE MEXICO SC</Empresa>
+    <Fecha>2013-12-13T10:20:52.775379-06:00</Fecha>
+    <RFC>GSM010301EG4</RFC>
+    <NOCSD>00001000000200078143</NOCSD>
+    <LlavePrivada>GSM010301EG4_1001121424S.key</LlavePrivada>
+    <Nombre>Cesar Guel</Nombre>
+    <Usuario>CGUEL</Usuario>
+    <Passw>cesar1</Passw>
+    <Email>cguel@gruposistecom.com</Email>
+    <Tel>8999101727</Tel>
+    <EstadoAut />
+  </Solicitudes>
+  <Solicitudes>
+    <IDRequest>43</IDRequest>
+    <Numero>1</Numero>
+    <Sucursal>1</Sucursal>
+    <CSD>00001000000200078143.cer</CSD>
+    <Empresa>GRUPO SISTECOM DE MEXICO SC</Empresa>
+    <Fecha>2013-12-27T10:18:03.9143536-06:00</Fecha>
+    <RFC>GSM010301EG4</RFC>
+    <NOCSD>00001000000200078143</NOCSD>
+    <LlavePrivada>gsm010301eg4_1201131059s.key</LlavePrivada>
+    <Nombre>cesar</Nombre>
+    <Usuario>gsm</Usuario>
+    <Passw>gsm</Passw>
+    <Email>cguel@gruposistecom.com</Email>
+    <Tel>899 1800127</Tel>
+    <EstadoAut />
+  </Solicitudes>
+  <Solicitudes>
+    <IDRequest>47</IDRequest>
+    <Numero>1</Numero>
+    <Sucursal>1</Sucursal>
+    <CSD>00001000000200078143.cer</CSD>
+    <Empresa>GRUPO SISTECOM DE MEXICO SC</Empresa>
+    <Fecha>2013-12-27T10:53:40.7615742-06:00</Fecha>
+    <RFC>GSM010301EG4</RFC>
+    <NOCSD>00001000000200078143</NOCSD>
+    <LlavePrivada>gsm010301eg4_1201131059s.key</LlavePrivada>
+    <Nombre>cesar</Nombre>
+    <Usuario>gsm</Usuario>
+    <Passw>gsm</Passw>
+    <Email>cguel@gruposistecom.com</Email>
+    <Tel>899 1800127</Tel>
+    <EstadoAut />
+  </Solicitudes>
+</DocumentElement>

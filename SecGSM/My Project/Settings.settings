@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="SecGSM_wsLocalGral_gralService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.gruposistecom.com/WSGSM3/wsCli.php</Value>
+    </Setting>
+    <Setting Name="SecGSM_wsLocalSrv_srvService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.gruposistecom.com/WSGSM3/wsSrv.php</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

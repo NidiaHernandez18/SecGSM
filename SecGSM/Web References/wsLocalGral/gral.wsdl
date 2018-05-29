@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:typens="urn:gral" xmlns="http://schemas.xmlsoap.org/wsdl/" name="gral" targetNamespace="urn:gral" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="fxLogin">
+    <wsdl:part name="Info" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="fxLogin_userResponse">
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="Sign_Cancel">
+    <wsdl:part name="Info" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="Sign_Cancel_userResponse">
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="fxSoporte">
+    <wsdl:part name="Info" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="fxSoporte_userResponse">
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="fxNewLic">
+    <wsdl:part name="Info" type="xsd:string" />
+    <wsdl:part name="CSD" type="xsd:base64Binary" />
+  </wsdl:message>
+  <wsdl:message name="fxNewLic_userResponse">
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="fxCheckLic">
+    <wsdl:part name="Info" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="fxCheckLic_userResponse">
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="fxNewKey">
+    <wsdl:part name="Info" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="fxNewKey_userResponse">
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="gralPortType">
+    <wsdl:operation name="fxLogin">
+      <wsdl:input message="typens:fxLogin" />
+      <wsdl:output message="typens:fxLogin_userResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Sign_Cancel">
+      <wsdl:input message="typens:Sign_Cancel" />
+      <wsdl:output message="typens:Sign_Cancel_userResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fxSoporte">
+      <wsdl:input message="typens:fxSoporte" />
+      <wsdl:output message="typens:fxSoporte_userResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fxNewLic">
+      <wsdl:input message="typens:fxNewLic" />
+      <wsdl:output message="typens:fxNewLic_userResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fxCheckLic">
+      <wsdl:input message="typens:fxCheckLic" />
+      <wsdl:output message="typens:fxCheckLic_userResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fxNewKey">
+      <wsdl:input message="typens:fxNewKey" />
+      <wsdl:output message="typens:fxNewKey_userResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="gralBinding" type="typens:gralPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="fxLogin">
+      <soap:operation soapAction="urn:gralAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sign_Cancel">
+      <soap:operation soapAction="urn:gralAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fxSoporte">
+      <soap:operation soapAction="urn:gralAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fxNewLic">
+      <soap:operation soapAction="urn:gralAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fxCheckLic">
+      <soap:operation soapAction="urn:gralAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fxNewKey">
+      <soap:operation soapAction="urn:gralAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gral" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="gralService">
+    <wsdl:port name="gralPort" binding="typens:gralBinding">
+      <soap:address location="http://www.gruposistecom.com/WSGSM3/wsCli.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

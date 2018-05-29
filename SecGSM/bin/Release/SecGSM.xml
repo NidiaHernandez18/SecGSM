@@ -1,0 +1,210 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SecGSM
+</name>
+</assembly>
+<members>
+<member name="P:SecGSM.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Capa_1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Locker2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Login_01">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Login_02">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Search">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:SecGSM.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.#ctor">
+	<remarks/>
+</member><member name="E:SecGSM.wsLocalSrv.srvService.UpdateClienteCompleted">
+	<remarks/>
+</member><member name="E:SecGSM.wsLocalSrv.srvService.UpdateCLUSCompleted">
+	<remarks/>
+</member><member name="E:SecGSM.wsLocalSrv.srvService.UpdateMsgsCompleted">
+	<remarks/>
+</member><member name="E:SecGSM.wsLocalSrv.srvService.UpdateCatTimbresCompleted">
+	<remarks/>
+</member><member name="E:SecGSM.wsLocalSrv.srvService.GetInfoCompleted">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateCliente(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateClienteAsync(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateClienteAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateCLUS(System.String,System.Byte[],System.Byte[])">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateCLUSAsync(System.String,System.Byte[],System.Byte[])">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateCLUSAsync(System.String,System.Byte[],System.Byte[],System.Object)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateMsgs(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateMsgsAsync(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateMsgsAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateCatTimbres(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateCatTimbresAsync(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.UpdateCatTimbresAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.GetInfo(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.GetInfoAsync(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.GetInfoAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalSrv.srvService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalSrv.srvService">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalSrv.UpdateClienteCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SecGSM.wsLocalSrv.UpdateClienteCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalSrv.UpdateClienteCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalSrv.UpdateCLUSCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SecGSM.wsLocalSrv.UpdateCLUSCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalSrv.UpdateCLUSCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalSrv.UpdateMsgsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SecGSM.wsLocalSrv.UpdateMsgsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalSrv.UpdateMsgsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalSrv.UpdateCatTimbresCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SecGSM.wsLocalSrv.UpdateCatTimbresCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalSrv.UpdateCatTimbresCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalSrv.GetInfoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SecGSM.wsLocalSrv.GetInfoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalSrv.GetInfoCompletedEventArgs">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.#ctor">
+	<remarks/>
+</member><member name="E:SecGSM.wsLocalGral.gralService.fxLoginCompleted">
+	<remarks/>
+</member><member name="E:SecGSM.wsLocalGral.gralService.Sign_CancelCompleted">
+	<remarks/>
+</member><member name="E:SecGSM.wsLocalGral.gralService.fxSoporteCompleted">
+	<remarks/>
+</member><member name="E:SecGSM.wsLocalGral.gralService.fxNewLicCompleted">
+	<remarks/>
+</member><member name="E:SecGSM.wsLocalGral.gralService.fxCheckLicCompleted">
+	<remarks/>
+</member><member name="E:SecGSM.wsLocalGral.gralService.fxNewKeyCompleted">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxLogin(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxLoginAsync(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxLoginAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.Sign_Cancel(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.Sign_CancelAsync(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.Sign_CancelAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxSoporte(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxSoporteAsync(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxSoporteAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxNewLic(System.String,System.Byte[])">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxNewLicAsync(System.String,System.Byte[])">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxNewLicAsync(System.String,System.Byte[],System.Object)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxCheckLic(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxCheckLicAsync(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxCheckLicAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxNewKey(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxNewKeyAsync(System.String)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.fxNewKeyAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SecGSM.wsLocalGral.gralService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.gralService">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.fxLoginCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SecGSM.wsLocalGral.fxLoginCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.fxLoginCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.Sign_CancelCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SecGSM.wsLocalGral.Sign_CancelCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.Sign_CancelCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.fxSoporteCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SecGSM.wsLocalGral.fxSoporteCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.fxSoporteCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.fxNewLicCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SecGSM.wsLocalGral.fxNewLicCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.fxNewLicCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.fxCheckLicCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SecGSM.wsLocalGral.fxCheckLicCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.fxCheckLicCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.fxNewKeyCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SecGSM.wsLocalGral.fxNewKeyCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SecGSM.wsLocalGral.fxNewKeyCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>
