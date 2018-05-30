@@ -74,3 +74,40 @@ C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\
 C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.xml
 C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.pdb
 C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.XmlSerializers.dll
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\bin\Release\SecGSM.dll.config
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\bin\Release\SecGSM.dll
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\bin\Release\SecGSM.XmlSerializers.dll
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\bin\Release\SecGSM.pdb
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\bin\Release\SecGSM.xml
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\bin\Release\diCrSysPKINet.dll
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmUsuariosAMMAC.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmBiometria.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmCapturandoHuella.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmPermisosR.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmCertificado2.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmLeerCert.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmNew.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmSolCLU.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmusuarios4.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmbuscar.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmusuariosNIC.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmCertificado.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmcambiarpassw.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.Frmcandado.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmEmpresa.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmllave.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmpermisos.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmreportes.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmseguridad.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmTables.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmusuarios.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmusuarios2.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmUsuarios3.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmViewDatatable.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.Resources.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmWS.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.vbproj.GenerateResource.Cache
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.dll
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.xml
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.pdb
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.XmlSerializers.dll

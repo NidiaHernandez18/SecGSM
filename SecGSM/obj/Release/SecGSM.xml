@@ -6,40 +6,7 @@ SecGSM
 </name>
 </assembly>
 <members>
-<member name="P:SecGSM.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:SecGSM.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="P:SecGSM.My.Resources.Resources.Capa_1">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:SecGSM.My.Resources.Resources.Locker2">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:SecGSM.My.Resources.Resources.Login_01">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:SecGSM.My.Resources.Resources.Login_02">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:SecGSM.My.Resources.Resources.Search">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="T:SecGSM.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="M:SecGSM.wsLocalSrv.srvService.#ctor">
+<member name="M:SecGSM.wsLocalSrv.srvService.#ctor">
 	<remarks/>
 </member><member name="E:SecGSM.wsLocalSrv.srvService.UpdateClienteCompleted">
 	<remarks/>
@@ -115,6 +82,39 @@ SecGSM
 	<remarks/>
 </member><member name="T:SecGSM.wsLocalSrv.GetInfoCompletedEventArgs">
 	<remarks/>
+</member><member name="P:SecGSM.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Capa_1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Locker2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Login_01">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Login_02">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SecGSM.My.Resources.Resources.Search">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:SecGSM.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member><member name="M:SecGSM.wsLocalGral.gralService.#ctor">
 	<remarks/>
 </member><member name="E:SecGSM.wsLocalGral.gralService.fxLoginCompleted">
