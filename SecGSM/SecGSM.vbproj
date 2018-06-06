@@ -123,6 +123,12 @@
     <Compile Include="classini.vb" />
     <Compile Include="Classtreeview.vb" />
     <Compile Include="Classutilidad.vb" />
+    <Compile Include="frmlogin.Designer.vb">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPermisosR.Designer.vb">
       <DependentUpon>frmPermisosR.vb</DependentUpon>
     </Compile>
@@ -298,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Biometria\frmCapturandoHuella.resx">
       <DependentUpon>frmCapturandoHuella.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>frmlogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPermisosR.resx">
       <DependentUpon>frmPermisosR.vb</DependentUpon>
