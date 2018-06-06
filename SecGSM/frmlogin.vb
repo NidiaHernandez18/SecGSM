@@ -1,5 +1,9 @@
-﻿Public Class frmlogin
-    Public conex1 As String
+﻿Imports System.Data
+Imports System.Data.SqlClient
+
+Public Class frmlogin
+    Public conex1 As SqlConnection
+
     Private EMPRESA As String
 
     Private intentos As Integer
@@ -16,11 +20,21 @@
         If intentos > 3 Then
             MsgBox("Se ha Accedido de Intentos", vbCritical)
             'If EMPRESA.State = 1 Then EMPRESA.Close
-            Me.Close()
-            Exit Sub
+            If conex1.State Then conex1.Close()
+        Me.Close()
+        Exit Sub
         End If
+        'If EMPRESA.State = 1 Then EMPRESA.Close
+        If conex1.State Then conex1.Close()
+        consulta = "select * from tbl_usuarios where empresa='" & comB_Empresas.Text & "' and usuario='" & txt_Usuario.Text & "'"
+        Try
 
-        Then
+        Catch ex As Exception
+
+        End Try
+
+
+
     End Sub
 
     Private Sub bttn_Cancelar_Click(sender As Object, e As EventArgs) Handles bttn_Cancelar.Click

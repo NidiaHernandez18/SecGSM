@@ -63,59 +63,59 @@ Public Class frmPermisosR
     Private Sub frmPermisosR_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim auxnomina As Integer
 
-        cnn = New SqlConnection(conex1)
-        query = "select * from tbl_programas ORDER BY programas"
-        comando = New SqlCommand(query, cnn)
-        cnn.Open()
-        Try
-            objLectura = comando.ExecuteReader()
-            If objLectura.Read Then
-                Do While objLectura.Read
-                    comboB_SelecSistema.Items.Add(objLectura("programas"))
-                Loop
-                'comboB_SelecSistema.SelectedItem = 0
+        'cnn = New SqlConnection(conex1)
+        'query = "select * from tbl_programas ORDER BY programas"
+        'comando = New SqlCommand(query, cnn)
+        'cnn.Open()
+        'Try
+        '    objLectura = comando.ExecuteReader()
+        '    If objLectura.Read Then
+        '        Do While objLectura.Read
+        '            comboB_SelecSistema.Items.Add(objLectura("programas"))
+        '        Loop
+        '        'comboB_SelecSistema.SelectedItem = 0
 
-            End If
+        '    End If
 
-            If cnn.State = 1 Then cnn.Close()
+        '    If cnn.State = 1 Then cnn.Close()
 
-            If conex2.Length > 0 Then
+        '    If conex2.Length > 0 Then
 
-                cnn = New SqlConnection(conex1)
-                query = "select * from Tbl_empresas ORDER BY empresas"
-               
-            Else
+        '        cnn = New SqlConnection(conex1)
+        '        query = "select * from Tbl_empresas ORDER BY empresas"
 
-                cnn = New SqlConnection(conex2)
-                query = "select * from nomcof ORDER BY empresa"
+        '    Else
 
-            End If
-            auxnomina = 0
-            MsgBox(conex1 & " " & conex2)
+        '        cnn = New SqlConnection(conex2)
+        '        query = "select * from nomcof ORDER BY empresa"
 
-            comando = New SqlCommand(query, cnn)
+        '    End If
+        '    auxnomina = 0
+        '    MsgBox(conex1 & " " & conex2)
 
-            cnn.Open()
-            MsgBox(query)
-            objLectura = comando.ExecuteReader()
-            If objLectura.Read Then
-                MsgBox("3")
-                Do While objLectura.Read
-                    comboB_Empresa.Items.Add(Str(objLectura("numero")) & "-" & Trim(objLectura("empresa")))
-                Loop
-                '  comboB_SelecSistema.SelectedItem = 0
-                auxnomina = Mid(comboB_Empresa.Text, 1, InStr(comboB_Empresa.Text, "-") - 1)
-            End If
+        '    comando = New SqlCommand(query, cnn)
 
-            If cnn.State = 1 Then cnn.Close()
-            Enandes(True)
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        Finally
-            cnn.Close()
+        '    cnn.Open()
+        '    MsgBox(query)
+        '    objLectura = comando.ExecuteReader()
+        '    If objLectura.Read Then
+        '        MsgBox("3")
+        '        Do While objLectura.Read
+        '            comboB_Empresa.Items.Add(Str(objLectura("numero")) & "-" & Trim(objLectura("empresa")))
+        '        Loop
+        '        '  comboB_SelecSistema.SelectedItem = 0
+        '        auxnomina = Mid(comboB_Empresa.Text, 1, InStr(comboB_Empresa.Text, "-") - 1)
+        '    End If
 
-        End Try
-        'MsgBox(query)
+        '    If cnn.State = 1 Then cnn.Close()
+        '    Enandes(True)
+        'Catch ex As Exception
+        '    MsgBox(ex.Message)
+        'Finally
+        '    cnn.Close()
+
+        'End Try
+        ''MsgBox(query)
 
 
 
