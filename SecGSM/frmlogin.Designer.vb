@@ -108,9 +108,8 @@ Partial Class frmlogin
         Me.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.label4.Location = New System.Drawing.Point(161, 43)
         Me.label4.Name = "label4"
-        Me.label4.Size = New System.Drawing.Size(234, 24)
+        Me.label4.Size = New System.Drawing.Size(0, 24)
         Me.label4.TabIndex = 8
-        Me.label4.Text = "Sistema Reloj Checador"
         Me.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'pictureBox3
