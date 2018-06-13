@@ -83,6 +83,7 @@ C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\bin\Release\diCrSysPKINet.
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmUsuariosAMMAC.resources
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmBiometria.resources
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmCapturandoHuella.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmlogin.resources
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmPermisosR.resources
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmCertificado2.resources
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmLeerCert.resources
@@ -111,4 +112,4 @@ C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.dll
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.xml
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.pdb
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.XmlSerializers.dll
-C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmlogin.resources
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.vbprojResolveAssemblyReference.cache

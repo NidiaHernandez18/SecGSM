@@ -191,6 +191,7 @@ Partial Class frmlogin
         Me.Controls.Add(Me.comB_Empresas)
         Me.Name = "frmlogin"
         Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panel1.ResumeLayout(False)
