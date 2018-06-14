@@ -21,6 +21,7 @@ Public Class frmlogin
 
     Private Sub bttn_OK_Click(sender As Object, e As EventArgs) Handles bttn_OK.Click
         'cmdok
+        loginx = False
         If comB_Empresas.Text = "------- Seleccione Empresa --------" Then
             MsgBox("Seleccione una Empresa por favor", vbCritical, "LOGIN")
             Exit Sub
@@ -52,9 +53,7 @@ Public Class frmlogin
                     usuario = IIf(IsDBNull(objetoLectura("Usuario")), "", objetoLectura("Usuario"))
                     pass = IIf(IsDBNull(objetoLectura("passw")), "", objetoLectura("passw"))
                     nombre = IIf(IsDBNull(objetoLectura("nombre")), "", objetoLectura("nombre"))
-
                     numEmp = Val(Mid(objetoLectura("Empresa"), 1, 5))
-                    'MsgBox("AQUI")
                     Empresa = comB_Empresas.Text
 
                     ' MsgBox(objetoLectura("Usuario") & " " & objetoLectura("passw") & " " & objetoLectura("nombre"))
@@ -89,11 +88,7 @@ Public Class frmlogin
     Private Sub frmlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim snumero As Integer
         label4.Text = nombreaplic
-
-
         consulta = "select * from tbl_empresas order by numero"
-
-
         Try
             comando = New SqlCommand(consulta, conex1)
             conex1.Open()
