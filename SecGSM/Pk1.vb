@@ -21,10 +21,10 @@ Public Class Pk1
         Dim sKey As String
         sKey = Cadenahex("GRUPO SISTECOM DE MEXICO")
         sOutput = Space(cadena.Length)
-        MsgBox(sOutput)
+        'MsgBox(sOutput)
 
         nRet = TDEA_HexMode(sOutput, cadena, sKey, True, "CBC", "B36B6BFB6231084E")
-        MsgBox(nRet)
+        ' MsgBox(nRet)
 
         Encriptarpaso2 = sOutput
     End Function
