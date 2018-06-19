@@ -112,4 +112,3 @@ C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.dll
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.xml
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.pdb
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.XmlSerializers.dll
-C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.vbprojResolveAssemblyReference.cache

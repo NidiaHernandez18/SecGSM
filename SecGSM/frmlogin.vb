@@ -38,6 +38,7 @@ Public Class frmlogin
         If conex1.State Then conex1.Close()
         consulta = "select * from tbl_usuarios where empresa='" & comB_Empresas.Text & "' and usuario='" & txt_Usuario.Text & "'"
         Try
+
             comando = New SqlCommand(consulta, conex1)
             conex1.Open()
             objetoLectura = comando.ExecuteReader()
