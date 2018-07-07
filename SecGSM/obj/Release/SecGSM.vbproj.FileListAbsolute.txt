@@ -74,6 +74,7 @@ C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\
 C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.xml
 C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.pdb
 C:\Users\Programacion2\Documents\Visual Studio 2013\Projects\SecGSM\obj\Release\SecGSM.XmlSerializers.dll
+C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.pdb
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\bin\Release\SecGSM.dll.config
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\bin\Release\SecGSM.dll
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\bin\Release\SecGSM.XmlSerializers.dll
@@ -110,5 +111,4 @@ C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.frmWS.r
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.vbproj.GenerateResource.Cache
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.dll
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.xml
-C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.pdb
 C:\Users\Programacion2\Documents\GitHub\SecGSM\SecGSM\obj\Release\SecGSM.XmlSerializers.dll

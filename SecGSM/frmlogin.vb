@@ -35,7 +35,7 @@ Public Class frmlogin
         Exit Sub
         End If
         'If EMPRESA.State = 1 Then EMPRESA.Close
-        If conex1.State Then conex1.Close()
+        If conex1.State = 1 Then conex1.Close()
         consulta = "select * from tbl_usuarios where empresa='" & comB_Empresas.Text & "' and usuario='" & txt_Usuario.Text & "'"
         Try
 
@@ -91,6 +91,7 @@ Public Class frmlogin
         label4.Text = nombreaplic
         consulta = "select * from tbl_empresas order by numero"
         Try
+            If conex1.State = 1 Then conex1.Close()
             comando = New SqlCommand(consulta, conex1)
             conex1.Open()
             objetoLectura = comando.ExecuteReader()
