@@ -135,6 +135,7 @@
     <Compile Include="frmPermisosR.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Main.vb" />
     <Compile Include="RecibosCFDI\clsWs.vb" />
     <Compile Include="RecibosCFDI\FrmCertificado2.Designer.vb">
       <DependentUpon>FrmCertificado2.vb</DependentUpon>

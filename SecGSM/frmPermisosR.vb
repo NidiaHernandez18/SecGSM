@@ -16,29 +16,16 @@ Public Class frmPermisosR
 
 
 
-    'Public conex1 As New ADODB.Connection 'conexion a
-    'Public conex2 As New ADODB.Connection ''
-    ' Private regaux As New ADODB.Recordset
+    Public conex1 As New SqlConnection 'ADODB.Connection 'conexion a
+    Public conex2 As New SqlConnection 'ADODB.Connection ''
+
+    'Private regaux As New ADODB.Recordset
     ' Private reg As New ADODB.Recordset
-    '
     'Private Empleado As New ADODB.Recordset
 
-    Private Sub Enandes(ByVal verd As Boolean)
-        btt_Nuevo.Visible = verd
-        bttn_Editar.Visible = verd
-        bttn_Eliminar.Visible = verd
-        bttn_Cerrar.Visible = verd
-        bttn_Grabar.Visible = Not verd
-        bttn_Cencelar.Visible = Not verd
-        comboB_SelecSistema.Enabled = verd
-        comboB_Empresa.Enabled = verd
-        checkLis_Lectura.Enabled = Not verd
-        checkList_modulos.Enabled = Not verd
-        comboB_modulos.Enabled = verd
-        txt_nombre.Enabled = Not verd
-        txt_password.Enabled = Not verd
-        txt_usuario.Enabled = Not verd
-    End Sub
+
+
+    
 
     Public Property conectarReloj() As String
         Get
@@ -126,7 +113,7 @@ Public Class frmPermisosR
         comboB_modulos.Items.Clear()
         checkList_modulos.Items.Clear()
         query = "select DISTINCT (MODULO)AS MOD1 from tbl_progmod where  UPPER(programa)='" & comboB_SelecSistema.Text & "'"
-        'MsgBox(query)
+        MsgBox(query)
 
     End Sub
 
@@ -195,5 +182,21 @@ Public Class frmPermisosR
         Else
             MsgBox("No hay Modulos par asignar derechos", vbCritical, "Error")
         End If
+    End Sub
+    Private Sub Enandes(ByVal verd As Boolean)
+        btt_Nuevo.Visible = verd
+        bttn_Editar.Visible = verd
+        bttn_Eliminar.Visible = verd
+        bttn_Cerrar.Visible = verd
+        bttn_Grabar.Visible = Not verd
+        bttn_Cencelar.Visible = Not verd
+        comboB_SelecSistema.Enabled = verd
+        comboB_Empresa.Enabled = verd
+        checkLis_Lectura.Enabled = Not verd
+        checkList_modulos.Enabled = Not verd
+        comboB_modulos.Enabled = verd
+        txt_nombre.Enabled = Not verd
+        txt_password.Enabled = Not verd
+        txt_usuario.Enabled = Not verd
     End Sub
 End Class
