@@ -20,7 +20,10 @@ Public Class Main
 
     Public Sub UsuariosDerechos()
         Dim Frmp As New frmPermisosR
-        Frmp = c
-
+        Frmp.conex1 = condere
+        Frmp.conex2 = condere2
+        Frmp.Show()
+        Frmp.Close()
+        Frmp = Nothing
     End Sub
 End Class

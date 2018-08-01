@@ -7,6 +7,8 @@ Public Class frmPermisosR
     Private query As String
     Private opcU As Integer
     Private objLectura As SqlDataReader
+    Private objDataAdapter As SqlDataAdapter
+
 
     Dim cadenaReloj As String
     Dim cadenaNomina As String
@@ -16,8 +18,11 @@ Public Class frmPermisosR
 
 
 
+
     Public conex1 As New SqlConnection 'ADODB.Connection 'conexion a
     Public conex2 As New SqlConnection 'ADODB.Connection ''
+
+    Dim dt As DataTable
 
     'Private regaux As New ADODB.Recordset
     ' Private reg As New ADODB.Recordset
@@ -49,11 +54,23 @@ Public Class frmPermisosR
 
     Private Sub frmPermisosR_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim auxnomina As Integer
+        query = "select * from tbl_programas ORDER BY programas"
 
         'cnn = New SqlConnection(conex1)
         'query = "select * from tbl_programas ORDER BY programas"
-        'comando = New SqlCommand(query, cnn)
+        comando = New SqlCommand(query, conex1)
+        objDataAdapter.SelectCommand = comando
+        objDataAdapter.Fill(dt)
+
+        comboB_SelecSistema.DataSource = dt
+        comboB_Empresa.DisplayMember = "Programas"
+
+
+
+
         'cnn.Open()
+
+
         'Try
         '    objLectura = comando.ExecuteReader()
         '    If objLectura.Read Then
@@ -114,7 +131,16 @@ Public Class frmPermisosR
         checkList_modulos.Items.Clear()
         query = "select DISTINCT (MODULO)AS MOD1 from tbl_progmod where  UPPER(programa)='" & comboB_SelecSistema.Text & "'"
         MsgBox(query)
-
+        'comando = New SqlCommand(query, cnn)
+        ' dt = new DataTable();
+        'consulta = "SELECT HORARIO,TEA,TED ,TSA ,TSD ,id FROM horario";
+        'if (objSqlConexion.State == ConnectionState.Open) objSqlConexion.Close();
+        'objSqlConexion.Open();
+        'comando = new SqlCommand(consulta, objSqlConexion);
+        'objDataAdapter.SelectCommand = comando;
+        'objSqlConexion.Close();
+        'objDataAdapter.Fill(dt);
+        ' return dt; 
     End Sub
 
     Private Sub comboB_Empresa_Click(sender As Object, e As EventArgs) Handles comboB_Empresa.Click
