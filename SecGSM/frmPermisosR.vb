@@ -31,7 +31,7 @@ Public Class frmPermisosR
     'Private Empleado As New ADODB.Recordset
 
 
-    Dim selec() As String
+
 
 
 
@@ -96,6 +96,7 @@ Public Class frmPermisosR
         End Try
         Call llenaModulo()
         Call informacion()
+        Enandes(True)
     End Sub
 
     Private Sub comboB_SelecSistema_Click(sender As Object, e As EventArgs) Handles comboB_SelecSistema.Click
@@ -188,6 +189,8 @@ Public Class frmPermisosR
             dgv_permisos.Columns(0).Visible = False
             dgv_permisos.Columns(2).Visible = False
             dgv_permisos.Columns(4).Visible = False
+            dgv_permisos.DefaultCellStyle.WrapMode = DataGridViewTriState.True
+
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
@@ -199,6 +202,9 @@ Public Class frmPermisosR
     End Sub
 
     Private Sub bttn_Cencelar_Click(sender As Object, e As EventArgs) Handles bttn_Cencelar.Click
+        cancelar()
+    End Sub
+    Private Sub cancelar()
         opcU = 0
         Enandes(True)
         txt_nombre.Text = "" 'text 4
@@ -208,30 +214,196 @@ Public Class frmPermisosR
     End Sub
 
     Private Sub bttn_Grabar_Click(sender As Object, e As EventArgs) Handles bttn_Grabar.Click
+        If Not validaciones() Then
+            Exit Sub
+        End If
+        Select Case opcU
+            Case 1
+                Try
+                    reg = conex1
+                    If reg.State = 0 Then reg.Open()
+
+                    query = "delete from tbl_permisos where PROGRAMA='" & comboB_SelecSistema.Text & "' AND NO_EMPRESA='" & comboB_Empresa.Text & "' AND MODULOS='" & comboB_modulos.Text & "' and usuario='" & txt_usuario.Text & "'"
+                    comando = New SqlCommand(query, reg)
+                    comando.ExecuteNonQuery()
+
+                    query = "INSERT INTO tbl_usuarios (Empresa, Usuario, passw, nombre) Values('" & comboB_Empresa.Text & "', '" & txt_usuario.Text & "', '" & txt_password.Text & "', '" & txt_nombre.Text & "')"
+                    comando = New SqlCommand(query, reg)
+                    comando.ExecuteNonQuery()
+
+                    For contador As Integer = 0 To checkList_modulos.Items.Count - 1 Step 1
+                        If (checkList_modulos.GetItemChecked(contador)) Then
+                            query = "insert into tbl_permisos (programa,No_empresa,Modulos,opcion,tipo,usuario) values('" & comboB_SelecSistema.Text & "','" & comboB_Empresa.Text & "', '" & comboB_modulos.Text & "','" & checkList_modulos.Items(contador).ToString() & "','" & IIf(checkLis_Lectura.GetItemChecked(contador), "S", "N") & "','" & txt_usuario.Text & "')"
+                            comando = New SqlCommand(query, reg)
+                            comando.ExecuteNonQuery()
+                        End If
+                    Next
+
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                Finally
+                    reg.Close()
+                End Try
+               
+            Case 2
+                Try
+                    reg = conex1
+                    If reg.State = 0 Then reg.Open()
+
+                    query = "delete from tbl_permisos where PROGRAMA='" & comboB_SelecSistema.Text & "' AND NO_EMPRESA='" & comboB_Empresa.Text & "' AND MODULOS='" & comboB_modulos.Text & "' and usuario='" & txt_usuario.Text & "'"
+                    comando = New SqlCommand(query, reg)
+                    comando.ExecuteNonQuery()
+
+                    For contador As Integer = 0 To checkList_modulos.Items.Count - 1 Step 1
+                        If (checkList_modulos.GetItemChecked(contador)) Then
+                            query = "insert into tbl_permisos (programa,No_empresa,Modulos,opcion,tipo,usuario) values('" & comboB_SelecSistema.Text & "','" & comboB_Empresa.Text & "', '" & comboB_modulos.Text & "','" & checkList_modulos.Items(contador).ToString() & "','" & IIf(checkLis_Lectura.GetItemChecked(contador), "S", "N") & "','" & txt_usuario.Text & "')"
+                            comando = New SqlCommand(query, reg)
+                            comando.ExecuteNonQuery()
+                        End If
+                    Next
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                Finally
+                    reg.Close()
+                End Try
+
+        End Select
+        cancelar()
+        informacion()
+        cargarPermisos()
+        Usuarios()
 
     End Sub
+    Private Function validaciones() As Boolean
+        validaciones = False
 
+        If Len(txt_nombre.Text) = 0 Then
+            MsgBox("Por favor capture el nombre del usuario", vbCritical, "Informacion")
+            Exit Function
+        End If
+        If Len(txt_usuario.Text) = 0 Then
+            MsgBox("Por favor capture el usuario del usuario", vbCritical, "Informacion")
+            Exit Function
+        End If
+        If Len(txt_password.Text) = 0 Then
+            MsgBox("Por favor capture el password del usuario", vbCritical, "Informacion")
+            Exit Function
+        End If
+        Select Case opcU
+            Case 1
+                Try
+                    query = "select * from tbl_usuarios where EMPRESA='" & comboB_Empresa.Text & "' and usuario='" & txt_usuario.Text & "'"
+                    reg = conex1
+                    If reg.State = 0 Then reg.Open()
+                    comando = New SqlCommand(query, reg)
+                    If (comando.ExecuteScalar() > 0) Then
+                        MsgBox("El usuario ya existe", vbCritical, "Informacion")
+                        Exit Function
+                    End If
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                Finally
+                    reg.Close()
+                End Try
+            Case 2
+
+        End Select
+        validaciones = True
+    End Function
     Private Sub bttn_Cerrar_Click(sender As Object, e As EventArgs) Handles bttn_Cerrar.Click
         Me.Close()
     End Sub
 
     Private Sub bttn_Eliminar_Click(sender As Object, e As EventArgs) Handles bttn_Eliminar.Click
-        If (dgv_permisos.RowCount > 0) Then
-            Dim fila As Integer
-            Dim columnas As Integer
-            selec=New String [columnas]
+        Try
+            If (dgv_permisos.RowCount > 0 And dgv_permisos.SelectedRows.Count > 0) Then
+                Dim fila As Integer
+                Dim usuario As String
+                fila = dgv_permisos.CurrentRow.Index
+                usuario = dgv_permisos.Rows(fila).Cells(1).Value.ToString()
 
-            If MsgBox("¿Estas seguro de continuar con este proceso?  " + vbLf + "el usuario a eliminar es", vbCritical + MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+                    If MsgBox("¿Estas seguro de continuar con este proceso?  " + vbLf + "el usuario a eliminar es " & usuario, vbCritical + MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+                        reg = conex1
+                        If reg.State = 0 Then reg.Open()
+                        query = "delete from tbl_usuarios where usuario='" & usuario & "'"
+                        comando = New SqlCommand(query, reg)
+                        comando.ExecuteNonQuery()
 
+                        query = "delete from tbl_permisos where usuario='" & usuario & "'"
+                        comando = New SqlCommand(query, reg)
+                        comando.ExecuteNonQuery()
+                    End If
             End If
-        End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            reg.Close()
+        End Try
+
+        
+        Call informacion()
         
     End Sub
 
     Private Sub bttn_Editar_Click(sender As Object, e As EventArgs) Handles bttn_Editar.Click
+        opcU = 2
+        Dim usuario As String
+        Dim password As String
+        Dim nombre As String
+        Dim fila As Integer
+         If (dgv_permisos.RowCount > 0 And dgv_permisos.SelectedRows.Count > 0) Then
+            If comboB_modulos.Items.Count > 0 Then
+                fila = dgv_permisos.CurrentRow.Index
+                usuario = dgv_permisos.Rows(fila).Cells(1).Value.ToString()
+                password = dgv_permisos.Rows(fila).Cells(2).Value.ToString()
+                nombre = dgv_permisos.Rows(fila).Cells(3).Value.ToString()
+
+                txt_nombre.Text = nombre
+                txt_usuario.Text = usuario
+                txt_password.Text = password
+                cargarPermisos()
+                Enandes(False)
+                txt_usuario.Enabled = False
+            Else
+                MsgBox("No hay Modulos para asignar derechos", vbCritical, "Error")
+            End If
+        Else
+            MsgBox("No hay Usuarios para asignar derechos", vbCritical, "Error")
+        End If
 
     End Sub
+    Private Sub cargarPermisos()
+        Try
+            For contador As Integer = 0 To checkList_modulos.Items.Count - 1 Step 1
+                checkList_modulos.SetItemChecked(contador, False)
+                checkLis_Lectura.SetItemChecked(contador, False)
+            Next
+            query = "select * from Tbl_permisos where PROGRAMA='" & comboB_SelecSistema.Text & "' AND NO_EMPRESA='" & comboB_Empresa.Text & "' AND MODULOS='" & comboB_modulos.Text & "' and usuario='" & txt_usuario.Text & "'"
+            reg = conex1
+            If reg.State = 0 Then reg.Open()
+            comando = New SqlCommand(query, reg)
+            objLectura = comando.ExecuteReader()
+            Do While objLectura.Read
+                For contador As Integer = 0 To checkList_modulos.Items.Count - 1 Step 1
+                    If (objLectura("opcion") = checkList_modulos.Items(contador).ToString()) Then
+                        checkList_modulos.SetItemChecked(contador, True)
+                        If (objLectura("Tipo") = "S") Then
+                            checkLis_Lectura.SetItemChecked(contador, True)
+                        End If
+                    End If
+                Next
+            Loop
 
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            objLectura.Close()
+            reg.Close()
+        End Try
+
+
+    End Sub
     Private Sub btt_Nuevo_Click(sender As Object, e As EventArgs) Handles btt_Nuevo.Click
         opcU = 1
         If comboB_modulos.Items.Count > 0 Then

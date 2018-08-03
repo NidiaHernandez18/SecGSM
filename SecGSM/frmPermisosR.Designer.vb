@@ -83,7 +83,7 @@ Partial Class frmPermisosR
         Me.comboB_Empresa.FormattingEnabled = True
         Me.comboB_Empresa.Location = New System.Drawing.Point(38, 196)
         Me.comboB_Empresa.Name = "comboB_Empresa"
-        Me.comboB_Empresa.Size = New System.Drawing.Size(192, 21)
+        Me.comboB_Empresa.Size = New System.Drawing.Size(207, 21)
         Me.comboB_Empresa.TabIndex = 17
         '
         'comboB_SelecSistema
@@ -91,7 +91,7 @@ Partial Class frmPermisosR
         Me.comboB_SelecSistema.FormattingEnabled = True
         Me.comboB_SelecSistema.Location = New System.Drawing.Point(38, 147)
         Me.comboB_SelecSistema.Name = "comboB_SelecSistema"
-        Me.comboB_SelecSistema.Size = New System.Drawing.Size(192, 21)
+        Me.comboB_SelecSistema.Size = New System.Drawing.Size(207, 21)
         Me.comboB_SelecSistema.TabIndex = 16
         '
         'panel1
@@ -153,9 +153,9 @@ Partial Class frmPermisosR
         'checkLis_Lectura
         '
         Me.checkLis_Lectura.FormattingEnabled = True
-        Me.checkLis_Lectura.Location = New System.Drawing.Point(162, 30)
+        Me.checkLis_Lectura.Location = New System.Drawing.Point(192, 30)
         Me.checkLis_Lectura.Name = "checkLis_Lectura"
-        Me.checkLis_Lectura.Size = New System.Drawing.Size(128, 94)
+        Me.checkLis_Lectura.Size = New System.Drawing.Size(98, 94)
         Me.checkLis_Lectura.TabIndex = 15
         '
         'checkList_modulos
@@ -163,7 +163,7 @@ Partial Class frmPermisosR
         Me.checkList_modulos.FormattingEnabled = True
         Me.checkList_modulos.Location = New System.Drawing.Point(6, 30)
         Me.checkList_modulos.Name = "checkList_modulos"
-        Me.checkList_modulos.Size = New System.Drawing.Size(153, 94)
+        Me.checkList_modulos.Size = New System.Drawing.Size(180, 94)
         Me.checkList_modulos.TabIndex = 14
         '
         'comboB_modulos
@@ -171,7 +171,7 @@ Partial Class frmPermisosR
         Me.comboB_modulos.FormattingEnabled = True
         Me.comboB_modulos.Location = New System.Drawing.Point(6, 6)
         Me.comboB_modulos.Name = "comboB_modulos"
-        Me.comboB_modulos.Size = New System.Drawing.Size(153, 21)
+        Me.comboB_modulos.Size = New System.Drawing.Size(180, 21)
         Me.comboB_modulos.TabIndex = 0
         '
         'tabControl1
@@ -221,13 +221,16 @@ Partial Class frmPermisosR
         '
         'txt_password
         '
+        Me.txt_password.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txt_password.Location = New System.Drawing.Point(14, 114)
         Me.txt_password.Name = "txt_password"
+        Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_password.Size = New System.Drawing.Size(103, 20)
         Me.txt_password.TabIndex = 9
         '
         'txt_usuario
         '
+        Me.txt_usuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txt_usuario.Location = New System.Drawing.Point(14, 75)
         Me.txt_usuario.Name = "txt_usuario"
         Me.txt_usuario.Size = New System.Drawing.Size(103, 20)
@@ -244,6 +247,7 @@ Partial Class frmPermisosR
         '
         'txt_nombre
         '
+        Me.txt_nombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txt_nombre.Location = New System.Drawing.Point(14, 35)
         Me.txt_nombre.Name = "txt_nombre"
         Me.txt_nombre.Size = New System.Drawing.Size(182, 20)
@@ -254,9 +258,8 @@ Partial Class frmPermisosR
         Me.dgv_permisos.AllowUserToAddRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.SkyBlue
         Me.dgv_permisos.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgv_permisos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
+        Me.dgv_permisos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgv_permisos.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.dgv_permisos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_permisos.Location = New System.Drawing.Point(209, 19)
         Me.dgv_permisos.Name = "dgv_permisos"
         Me.dgv_permisos.Size = New System.Drawing.Size(290, 129)
@@ -267,7 +270,7 @@ Partial Class frmPermisosR
         Me.bttn_Cencelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttn_Cencelar.ForeColor = System.Drawing.Color.DarkBlue
         Me.bttn_Cencelar.Image = CType(resources.GetObject("bttn_Cencelar.Image"), System.Drawing.Image)
-        Me.bttn_Cencelar.Location = New System.Drawing.Point(286, 547)
+        Me.bttn_Cencelar.Location = New System.Drawing.Point(288, 463)
         Me.bttn_Cencelar.Name = "bttn_Cencelar"
         Me.bttn_Cencelar.Size = New System.Drawing.Size(65, 59)
         Me.bttn_Cencelar.TabIndex = 25
@@ -281,7 +284,7 @@ Partial Class frmPermisosR
         Me.bttn_Grabar.ForeColor = System.Drawing.Color.DarkBlue
         Me.bttn_Grabar.Image = CType(resources.GetObject("bttn_Grabar.Image"), System.Drawing.Image)
         Me.bttn_Grabar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.bttn_Grabar.Location = New System.Drawing.Point(203, 547)
+        Me.bttn_Grabar.Location = New System.Drawing.Point(205, 463)
         Me.bttn_Grabar.Name = "bttn_Grabar"
         Me.bttn_Grabar.Size = New System.Drawing.Size(65, 59)
         Me.bttn_Grabar.TabIndex = 24
@@ -294,7 +297,7 @@ Partial Class frmPermisosR
         Me.bttn_Cerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttn_Cerrar.ForeColor = System.Drawing.Color.DarkBlue
         Me.bttn_Cerrar.Image = CType(resources.GetObject("bttn_Cerrar.Image"), System.Drawing.Image)
-        Me.bttn_Cerrar.Location = New System.Drawing.Point(368, 482)
+        Me.bttn_Cerrar.Location = New System.Drawing.Point(370, 463)
         Me.bttn_Cerrar.Name = "bttn_Cerrar"
         Me.bttn_Cerrar.Size = New System.Drawing.Size(65, 59)
         Me.bttn_Cerrar.TabIndex = 23
@@ -309,7 +312,7 @@ Partial Class frmPermisosR
         Me.bttn_Eliminar.ForeColor = System.Drawing.Color.DarkBlue
         Me.bttn_Eliminar.Image = CType(resources.GetObject("bttn_Eliminar.Image"), System.Drawing.Image)
         Me.bttn_Eliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.bttn_Eliminar.Location = New System.Drawing.Point(286, 482)
+        Me.bttn_Eliminar.Location = New System.Drawing.Point(288, 463)
         Me.bttn_Eliminar.Name = "bttn_Eliminar"
         Me.bttn_Eliminar.Size = New System.Drawing.Size(65, 59)
         Me.bttn_Eliminar.TabIndex = 22
@@ -323,7 +326,7 @@ Partial Class frmPermisosR
         Me.bttn_Editar.ForeColor = System.Drawing.Color.DarkBlue
         Me.bttn_Editar.Image = CType(resources.GetObject("bttn_Editar.Image"), System.Drawing.Image)
         Me.bttn_Editar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.bttn_Editar.Location = New System.Drawing.Point(203, 482)
+        Me.bttn_Editar.Location = New System.Drawing.Point(205, 463)
         Me.bttn_Editar.Name = "bttn_Editar"
         Me.bttn_Editar.Size = New System.Drawing.Size(65, 59)
         Me.bttn_Editar.TabIndex = 21
@@ -338,7 +341,7 @@ Partial Class frmPermisosR
         Me.btt_Nuevo.ForeColor = System.Drawing.Color.DarkBlue
         Me.btt_Nuevo.Image = CType(resources.GetObject("btt_Nuevo.Image"), System.Drawing.Image)
         Me.btt_Nuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btt_Nuevo.Location = New System.Drawing.Point(122, 482)
+        Me.btt_Nuevo.Location = New System.Drawing.Point(124, 463)
         Me.btt_Nuevo.Name = "btt_Nuevo"
         Me.btt_Nuevo.Size = New System.Drawing.Size(65, 59)
         Me.btt_Nuevo.TabIndex = 20
@@ -350,7 +353,7 @@ Partial Class frmPermisosR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(570, 669)
+        Me.ClientSize = New System.Drawing.Size(570, 558)
         Me.Controls.Add(Me.bttn_Cencelar)
         Me.Controls.Add(Me.bttn_Grabar)
         Me.Controls.Add(Me.bttn_Cerrar)
