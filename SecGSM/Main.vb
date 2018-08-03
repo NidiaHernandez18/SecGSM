@@ -2,8 +2,8 @@
 Imports System.Data.SqlClient
 
 Public Class Main
-    Public condere As New SqlConnection
-    Public condere2 As New SqlConnection
+    Public condere As SqlConnection
+    Public condere2 As SqlConnection
     Public Validaruser As Boolean
     Public nomaplic As String
     Public nombreuser As String
@@ -22,7 +22,7 @@ Public Class Main
         Dim Frmp As New frmPermisosR
         Frmp.conex1 = condere
         Frmp.conex2 = condere2
-        Frmp.Show()
+        Frmp.ShowDialog()
         Frmp.Close()
         Frmp = Nothing
     End Sub

@@ -23,6 +23,7 @@ Partial Class frmPermisosR
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPermisosR))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.label2 = New System.Windows.Forms.Label()
         Me.label1 = New System.Windows.Forms.Label()
         Me.comboB_Empresa = New System.Windows.Forms.ComboBox()
@@ -82,7 +83,7 @@ Partial Class frmPermisosR
         Me.comboB_Empresa.FormattingEnabled = True
         Me.comboB_Empresa.Location = New System.Drawing.Point(38, 196)
         Me.comboB_Empresa.Name = "comboB_Empresa"
-        Me.comboB_Empresa.Size = New System.Drawing.Size(150, 21)
+        Me.comboB_Empresa.Size = New System.Drawing.Size(192, 21)
         Me.comboB_Empresa.TabIndex = 17
         '
         'comboB_SelecSistema
@@ -90,7 +91,7 @@ Partial Class frmPermisosR
         Me.comboB_SelecSistema.FormattingEnabled = True
         Me.comboB_SelecSistema.Location = New System.Drawing.Point(38, 147)
         Me.comboB_SelecSistema.Name = "comboB_SelecSistema"
-        Me.comboB_SelecSistema.Size = New System.Drawing.Size(150, 21)
+        Me.comboB_SelecSistema.Size = New System.Drawing.Size(192, 21)
         Me.comboB_SelecSistema.TabIndex = 16
         '
         'panel1
@@ -179,7 +180,7 @@ Partial Class frmPermisosR
         Me.tabControl1.Location = New System.Drawing.Point(38, 261)
         Me.tabControl1.Name = "tabControl1"
         Me.tabControl1.SelectedIndex = 0
-        Me.tabControl1.Size = New System.Drawing.Size(501, 185)
+        Me.tabControl1.Size = New System.Drawing.Size(513, 185)
         Me.tabControl1.TabIndex = 13
         '
         'tabPage1
@@ -196,7 +197,7 @@ Partial Class frmPermisosR
         Me.tabPage1.Location = New System.Drawing.Point(4, 22)
         Me.tabPage1.Name = "tabPage1"
         Me.tabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabPage1.Size = New System.Drawing.Size(493, 159)
+        Me.tabPage1.Size = New System.Drawing.Size(505, 159)
         Me.tabPage1.TabIndex = 0
         Me.tabPage1.Text = "Usuarios"
         '
@@ -250,10 +251,15 @@ Partial Class frmPermisosR
         '
         'dgv_permisos
         '
+        Me.dgv_permisos.AllowUserToAddRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.SkyBlue
+        Me.dgv_permisos.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_permisos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
+        Me.dgv_permisos.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.dgv_permisos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_permisos.Location = New System.Drawing.Point(209, 19)
         Me.dgv_permisos.Name = "dgv_permisos"
-        Me.dgv_permisos.Size = New System.Drawing.Size(273, 129)
+        Me.dgv_permisos.Size = New System.Drawing.Size(290, 129)
         Me.dgv_permisos.TabIndex = 0
         '
         'bttn_Cencelar
@@ -360,6 +366,7 @@ Partial Class frmPermisosR
         Me.Controls.Add(Me.tabControl1)
         Me.Name = "frmPermisosR"
         Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Permisos"
         Me.panel1.ResumeLayout(False)
         Me.panel1.PerformLayout()
